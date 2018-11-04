@@ -22,14 +22,13 @@ module.exports = {
 			jsx: true
 		}
 	},
-	// settings: {
-	// 	'import/resolver': {
-	// 		webpack: {
-	// 			config: path.join(__dirname, 'config', 'webpack.base.config.js'),
-	// 		},
-	// 	},
-	// },
 	rules: {
+		// personal
+		"semi": ["warning", "always", { "omitLastInOneLineBlock": true }],
+		"react/forbid-prop-types": "off",
+    "no-underscore-dangle": "off",
+
+
 		'linebreak-style': 'off', // Don't play nicely with Windows.
 
 		'arrow-parens': 'off', // Incompatible with prettier
